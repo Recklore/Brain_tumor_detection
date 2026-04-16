@@ -7,7 +7,8 @@
 - Team Member 3: Pradeep Kumar
 
 ## Preprocessed Data Drive Link
-- Link: https://drive.google.com/file/d/10gTcJ4Op52Dvop_PcygV3kLTykdEtbvo/view?usp=sharing
+- Processed Data Link: https://drive.google.com/file/d/10gTcJ4Op52Dvop_PcygV3kLTykdEtbvo/view?usp=sharing
+- PPT link: https://drive.google.com/file/d/10gTcJ4Op52Dvop_PcygV3kLTykdEtbvo/view?usp=sharing
 
 ## What We Built
 This project started as a brain tumor classification problem and evolved into a richer clinical-assist workflow that combines:
