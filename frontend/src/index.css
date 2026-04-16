@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff5f5 0%, #ffe4e6 100%);
+  color: #1f2937;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #ffe4e6; }
+::-webkit-scrollbar-thumb { background: #fb7185; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #ef4444; }
+
+/* Scanning line that sweeps over the uploaded MRI while loading */
+@keyframes scan-line {
+  0%   { top: 0%;   opacity: 0.85; }
+  50%  { opacity: 1; }
+  100% { top: 100%; opacity: 0.85; }
+}
+.scan-line { animation: scan-line 2.2s ease-in-out infinite; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { animation: fadeInUp 0.5s ease-out both; }
+
+/* Pulsing ring around the tumor location marker */
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.55); }
+  70%  { box-shadow: 0 0 0 18px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+.pulse-ring { animation: pulseRing 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
